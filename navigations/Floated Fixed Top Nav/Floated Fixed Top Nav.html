@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by sutyiboy (http://jsbin.com/bifomaq/7/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="hu">
+<head>
+<meta name="description" content="Components Project - Floated Fixed Top Nav">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+  <title>Components Project - Floated Fixed Top Nav</title>
+<style id="jsbin-css">
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(0,0,0, 0.7);
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: .5rem 1rem;
+  margin: 0 .1rem;
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+}
+
+nav a:hover {
+  color: rgba(200, 200, 200);
+  transition: color .2s ease-in-out;
+  border: 1px solid rgba(143, 143, 143);
+  background-color: rgba(0,0,0, 0.2);
+  border-radius: 9999px;
+  transition: background-color .2s ease-in-out;
+}
+
+nav a:active {
+  color: #000;
+  border-radius: 9999px;
+}
+
+.sign-up {
+  border: 1px solid rgba(143, 143, 143);
+  border-radius: 9999px
+}
+
+.sign-up:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  nav a {
+    float: right;
+  }
+  
+  .home {
+    float: left;
+  }
+  
+  /* Clearfix */
+  nav::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+}
+
+section {
+  padding-top: 12rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+}
+
+@media (min-width: 768px) {
+
+  section {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+    padding: .2rem;
+  }
+}
+
+</style>
+</head>
+ <body>
+  <nav>
+    <a href="#" class="sign-up">Sign Up</a>
+    <a href="#">Sign IN</a>
+    <a href="#">About</a>
+    <a href="#" class="home">Home</a>
+  </nav>
+  <section>
+    <p>A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</p>
+    <p>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.</p>
+    <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+    <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at porta elit. Integer nunc diam, dictum eu nibh id, mattis pellentesque massa. Vivamus tortor elit, ultrices eget ex id, interdum maximus risus. Vestibulum venenatis egestas dolor, vitae feugiat neque cursus eu. Aenean viverra, dolor eget molestie iaculis, odio odio hendrerit augue, et vestibulum nibh sapien sit amet neque. Phasellus ut erat eget quam tempus accumsan. Cras tellus eros, aliquam id cursus quis, eleifend non nulla. Nunc sed vehicula mauris, at vehicula eros. In sollicitudin leo non lorem tempus, ac viverra arcu aliquet. Nunc eget diam eleifend, vulputate orci lobortis, volutpat eros. Sed suscipit enim massa, vitae aliquam massa sodales at. Nullam ornare dignissim arcu, ut varius massa luctus nec. Nunc nec ipsum magna. Nam eget est a arcu vehicula tempor vel sed urna. Morbi tempus viverra risus.
+
+Mauris fringilla nibh at purus mollis posuere. Aliquam erat volutpat. Nam ut urna at elit varius porttitor. Nullam convallis elementum dui. Ut elementum neque lorem, a accumsan justo pulvinar non. Cras varius volutpat mollis. Sed vitae laoreet sapien. Aliquam magna tellus, ullamcorper et posuere ut, volutpat ac est. Sed at risus rhoncus, egestas nibh sed, venenatis orci. Morbi erat odio, consectetur et orci bibendum, venenatis vestibulum dui. Cras consectetur tortor sed nulla semper, semper iaculis turpis sodales. Phasellus ut mauris tempus, auctor sem sit amet, efficitur ex.
+
+Ut condimentum turpis sodales leo faucibus, sit amet posuere ante lobortis. Etiam tortor nulla, blandit sed lorem nec, aliquet feugiat eros. Donec pharetra interdum iaculis. In ut odio tempor, imperdiet neque ac, vehicula tortor. Nunc et metus semper, posuere nibh at, viverra tellus. Fusce pretium justo id eros hendrerit, congue iaculis ante finibus. Donec interdum, est quis venenatis fringilla, lacus enim vestibulum felis, ut elementum dolor est a felis. Nullam molestie posuere leo eget mollis. Donec pretium lorem ac est imperdiet tincidunt. Aenean finibus ipsum nec condimentum auctor. Proin auctor sem leo, et laoreet augue cursus vel. Quisque et tempus elit, eget condimentum tellus. Nullam nisi turpis, laoreet id nulla quis, dignissim pulvinar purus. Nam eu est mollis, semper elit placerat, bibendum risus. Aenean eleifend urna nulla, ut venenatis ante vulputate a. Sed dictum commodo risus ac efficitur.</p>
+  </section>
+ </body>
+</html>
